@@ -1,0 +1,39 @@
+<script>
+     
+</script> 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="bootstrap 4/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+    <body>
+        <div class="container text-center">
+            <label class="h1 col-md-12">Jorge Leber</label>
+            <label class="col-md-12"> # Jogo da Velha # </label>
+            
+            <div class="row">
+                <button class="col-md-4 celula" id="celula7"></button>
+                <button class="col-md-4 celula" id="celula8"></button>
+                <button class="col-md-4 celula" id="celula9"></button>
+            </div>
+            <div class="row">
+                <button class="col-md-4 celula" id="celula4"></button>
+                <button class="col-md-4 celula" id="celula5"></button>
+                <button class="col-md-4 celula" id="celula6"></button>
+            </div>
+            <div class="row">
+                <button class="col-md-4 celula" id="celula1"></button>
+                <button class="col-md-4 celula" id="celula2"></button>
+                <button class="col-md-4 celula" id="celula3"></button>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap 4/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(".celula").on('click', function(event){
+        let celulaSelecionada = this.id;
+        alert(`A ${celulaSelecionada} foi selecionada!`);
+    });
+</script>
