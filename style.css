@@ -1,3 +1,26 @@
-.container{width: 50%;}
+.indicador{
+    margin-right: 10px;
+}
 
-.celula{border: 2px solid black; height: 150px; text-align: center; background-color: red;}
+.informacoes{
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 252px;
+    text-align: center;
+}
+
+.tabuleiro{
+    width: 252px;
+    height: 252px;
+    margin:auto;
+}
+
+.celula{
+    width: 80px;
+    height: 60px;
+    border: 2px solid black;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}

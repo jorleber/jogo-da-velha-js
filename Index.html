@@ -1,39 +1,29 @@
-<script>
-     
-</script> 
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <link href="libs/bootstrap 4/css/bootstrap.min.css" rel="stylesheet"/>
+        <title>Jogo da Velha - Jorge Leber</title>
         <link href="style.css" rel="stylesheet"/>
+    </head>
     <body>
-        <div class="container text-center">
-            <label class="h1 col-md-12">Jorge Leber</label>
-            <label class="col-md-12"> # Jogo da Velha # </label>
-            
-            <div class="row">
-                <button class="col-md-4 celula" id="celula7"></button>
-                <button class="col-md-4 celula" id="celula8"></button>
-                <button class="col-md-4 celula" id="celula9"></button>
-            </div>
-            <div class="row">
-                <button class="col-md-4 celula" id="celula4"></button>
-                <button class="col-md-4 celula" id="celula5"></button>
-                <button class="col-md-4 celula" id="celula6"></button>
-            </div>
-            <div class="row">
-                <button class="col-md-4 celula" id="celula1"></button>
-                <button class="col-md-4 celula" id="celula2"></button>
-                <button class="col-md-4 celula" id="celula3"></button>
-            </div>
+        <div class="informacoes">
+            <h2>Jorge Leber</h2>
+            <h4 class="indicador">Vez do Jogador: </h4>
+            <img src="" height="50" id="imgJogador">
+        </div>
+        <div class="tabuleiro">
+            <div id="7" class="celula" contem=""></div>
+            <div id="8" class="celula" contem=""></div>
+            <div id="9" class="celula" contem=""></div>
+
+            <div id="4" class="celula" contem=""></div>
+            <div id="5" class="celula" contem=""></div>
+            <div id="6" class="celula" contem=""></div>
+
+            <div id="1" class="celula" contem=""></div>
+            <div id="2" class="celula" contem=""></div>
+            <div id="3" class="celula" contem=""></div>
         </div>
     </body>
 </html>
 <script src="libs/jquery/jquery.min.js"></script>
-<script src="libs/bootstrap 4/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(".celula").on('click', function(event){
-        let celulaSelecionada = this.id;
-        alert(`A ${celulaSelecionada} foi selecionada!`);
-    });
-</script>
+<script type="text/javascript" src="scriptJDV.js"></script>
